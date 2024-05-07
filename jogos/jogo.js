@@ -25,5 +25,10 @@ if(pipePosition <= 120 && pipePosition > 0 && marioPosition < 80) {
     mario.src = `game-over.png`;
     mario.style.width = `75px`;
     mario.style.marginLeft = `50px`;
+
+    clearInterval(loop);
+
 }
-})
+}, 10);
+
+document.addEventListener('keydown', jump);
